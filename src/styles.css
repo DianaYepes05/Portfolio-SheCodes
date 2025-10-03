@@ -27,6 +27,11 @@ h1 {
 h2 {
   font-size: 64px;
 }
+
+h4 {
+font-size: 48px;
+}
+
 p {
   font-family: var(--default-font-family);
   font-weight: normal;
@@ -73,7 +78,7 @@ p {
   font-size: 18px;
   font-family: var(--default-font-family);
 }
-.contente h3 {
+.content h3 {
   font-size: 24px;
   line-height: 1.5;
   font-family: var(--default-font-family);
@@ -128,15 +133,56 @@ nav li {
   margin-right: 10px;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: #272142;
   transition: all 200ms ease-in-out;
 }
 
-nav a:hover, nav li.active a {
-    color: var(--branding-color);
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
 }
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box{
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .contact-box p{
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-media-links a{
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 5px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-media-links a:hover{
+color: white;
+background-color: var(--branding-color);
+}
+
 
 @media (max-width: 960px) {
   h1 {
@@ -145,6 +191,9 @@ nav a:hover, nav li.active a {
   }
   h2 {
     font-size: 42px;
+  }
+  h4{
+    font-size: 30px;
   }
   .content {
     text-align: center;
